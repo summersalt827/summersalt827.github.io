@@ -63,6 +63,16 @@
   .build-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   @media (max-width: 900px) { .build-list { grid-template-columns: 1fr 1fr; } }
 
+  /* Timeline */
+  .timeline { display: flex; flex-direction: column; }
+  .tl-item { display: grid; grid-template-columns: 240px 1fr; gap: 24px; padding: 24px 0; border-bottom: 1px solid #f0f0f0; }
+  .tl-item:first-child { padding-top: 0; }
+  .tl-item:last-child { border-bottom: none; }
+  .tl-date { font-size: 12px; font-weight: 600; letter-spacing: 0.4px; color: #a1a1aa; text-transform: uppercase; padding-top: 4px; }
+  .tl-body h3 { font-size: 16px; font-weight: 600; letter-spacing: -0.2px; margin-bottom: 6px; }
+  .tl-body p { font-size: 13px; color: #71717a; line-height: 1.6; }
+  @media (max-width: 700px) { .tl-item { grid-template-columns: 1fr; gap: 8px; } }
+
   /* Footer */
   footer { background: #18181b; padding: 48px 0; }
   footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
@@ -144,6 +154,44 @@
         <h3>Building now</h3>
         <p>E2E job scraper with policy gates · harness-ification of all pipelines (YAML-defined agents, assertion gates) · personal agent suite runnable from a phone.</p>
         <span class="tag">In progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="kicker">Experience</div>
+    <h2 class="section-title">The path so far</h2>
+    <p class="section-desc">11 years across growth, operations, and now AI-native building.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">Aug 2026 — Jul 2027 (expected)</div>
+        <div class="tl-body">
+          <h3>SMU — MITB, Data Science &amp; Analytics</h3>
+          <p>Singapore. Building agent-native systems while studying: resume agent, content factory, eval-gated pipelines.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Nov 2025 — Dec 2025</div>
+        <div class="tl-body">
+          <h3>XT.EXCHANGE — Product Operations Consultant (contract)</h3>
+          <p>Crypto exchange. Delivered operational playbooks and launch readiness for product workflows.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Aug 2020 — Aug 2024</div>
+        <div class="tl-body">
+          <h3>Ping An Securities — Growth Operations, Equities</h3>
+          <p>4 years scaling retail equities user growth: AUM growth targets, KPI systems, SOPs and runbooks, cross-functional launches.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Earlier</div>
+        <div class="tl-body">
+          <h3>Tech product &amp; growth roles</h3>
+          <p>2345.com, Ping An Haofang, Unilever — product operations and user growth.</p>
+        </div>
       </div>
     </div>
   </div>
